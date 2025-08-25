@@ -1,0 +1,35 @@
+.overlay {
+  position: absolute;
+  pointer-events: none;
+}
+
+.hidden { display: none; }
+
+#sumpFill {
+  top: 350px; left: 100px;
+  width: 120px; height: 100px;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+#valveImg {
+  top: 250px; left: 500px;
+  width: 50px; height: 50px;
+}
+
+#pumpAnim {
+  top: 280px; left: 250px;
+  width: 150px; height: 130px;
+}
+
+#needle {
+  top: 50px; left: 600px;
+  width: 90px; height: 90px;
+  transform-origin: bottom center;
+  transition: transform 1s linear;
+}
+
+#jugPour {
+  top: 100px; left: 50px;
+  width: 100px; height: 120px;
+}
