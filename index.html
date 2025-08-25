@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Centrifugal Pump Simulator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Centrifugal Pump Virtual Simulator</h1>
+  </header>
+
+  <main>
+    <!-- Lab Canvas -->
+    <div id="labContainer" aria-label="Centrifugal Pump Simulator Canvas">
+
+      <!-- Base apparatus image -->
+      <img id="labImage" src="Assets/PumpSet.png" alt="Pump Setup" />
+
+      <!-- ===== Animation Overlays (all positioned via CSS) ===== -->
+      <!-- Tank fill overlay -->
+      <img id="sumpFill" src="Assets/sumpFill.png" class="overlay hidden" alt="Sump Tank Water Fill" />
+
+      <!-- Pump (static or running gif swapped by JS) -->
+      <img id="pumpAnim" src="Assets/pump.png" class="overlay hidden" alt="Pump Animation" />
+
+      <!-- Valve overlays (separate for suction & delivery) -->
+      <img id="valveDeliveryImg" src="Assets/valveClosed.png" class="overlay hidden" alt="Delivery Valve State" />
+      <img id="valveSuctionImg" src="Assets/valveClosed.png" class="overlay hidden" alt="Suction Valve State" />
+
+      <!-- Gauge needle overlay (rotated by JS) -->
+      <img id="needle" src="Assets/needle.png" class="overlay hidden" alt="Gauge Needle" />
+
+      <!-- Jug pour overlay -->
+      <img id="jugPour" src="Assets/jugPour.png" class="overlay hidden" alt="Jug Pouring" />
+
+      <!-- ===== Interactive Hotspots (transparent buttons) ===== -->
+      <button class="hotspot" id="sumpTank" aria-label="Sump Tank"></button>
+      <button class="hotspot" id="primingCock" aria-label="Priming Cock"></button>
+      <button class="hotspot" id="pump" aria-label="Pump"></button>
+      <button class="hotspot" id="suctionValve" aria-label="Suction Valve"></button>
+      <button class="hotspot" id="deliveryValve" aria-label="Delivery Valve"></button>
+      <button class="hotspot" id="jug" aria-label="Measuring Jug / Tank"></button>
+      <button class="hotspot" id="gauge" aria-label="Pressure/Wattmeter Gauge"></button>
+    </div>
+
+    <!-- Step instructions -->
+    <div id="instructions" role="status" aria-live="polite">
+      Step 1: Click sump tank to fill it.
+    </div>
+  </main>
+
+  <!-- Step loader & controller -->
+  <script src="Scripts/main.js"></script>
+</body>
+</html>
