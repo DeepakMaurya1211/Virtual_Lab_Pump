@@ -261,7 +261,7 @@ function mainLabel6() {
   if (f === 8) {
     
     console.log("hello world")
-    ins.innerText = "This is Circular Gauges⚙️";
+    ins.innerText = "This is Pressure Gauges⚙️";
     pressure_gauge.style.visibility = "visible"
 
    
@@ -421,6 +421,7 @@ function mainLabel8() {
 updateFrequency();
 if(f === 16){
   f = 17;
+  ins.innerText = "Click on the Run Button to run the motor"
   up_button_text.style.visibility = "hidden"
 run_button_text.style.visibility =  "visible";
     run_button_text.addEventListener("click", ()=>{
@@ -468,7 +469,7 @@ run_button_text.style.visibility =  "visible";
         pump_additional_pressure.innerText = "0.16"
 
 
-         ins.innerText = "Click On The Circular Valve To Rotate It full Anticlockwise To Acheive Maximum Flow Rate ✅✅"
+         ins.innerText = "Click On The Circular Gauge To Rotate It full Anticlockwise To Acheive Maximum Flow Rate ✅✅"
          
       
             rotating_gauges1.addEventListener("click",  () => {
@@ -495,7 +496,7 @@ run_button_text.style.visibility =  "visible";
         pumpA_discharge_pressure.innerText = "61.7"
         pump_additional_pressure.innerText = "0.72"
 
-                ins.innerText = "Now Again Click On The rotating valve For rotating anticlockwise to achieve maximum flow rate 100%"
+                ins.innerText = "Now Again Click On The circular gauge to rotating anticlockwise to achieve maximum flow rate 100%"
  setTimeout(() => {
                  rotating_gauges1.addEventListener("click",  () => {
                     if(f === 18){
@@ -736,13 +737,13 @@ function pump_85() {
     }
     
     // Continue with pump_85 logic...
-    ins.innerText = "Now Rotate Circular Valve Clockwise to make the maximum flow rate 85%";
+    ins.innerText = "Now Rotate Circular Gauge Clockwise to make the maximum flow rate 85%";
 
     observation_table_1150_text.style.visibility = "hidden"
     observation_table_1150_text.style.opacity = "0%"
     observation_table_1150_text1.style.visibility = "visible"
     observation_table_1150_text1.style.opacity = "100%";
-    ins.innerText = "Now Rotate Circular Valve Clockwise to make the maximum flow rate 85%"
+    ins.innerText = "Now Rotate Circular Gauge to make the maximum flow rate 85%"
       rotating_gauges2.addEventListener("click",  () => {
          if( f === 21){
           f = 22;
@@ -814,7 +815,7 @@ function pump_85() {
 }
 
 function pump_60() {
-    ins.innerText = "Now Rotate Circular Valve Clockwise to make the maximum flow rate 60%"
+    ins.innerText = "Now Rotate Circular Gauge Clockwise to make the maximum flow rate 60%"
        rotating_gauges2.addEventListener("click",  () => {
         if( f === 22){
           f = 23;
@@ -888,7 +889,7 @@ function pump_60() {
 }
 
 function pump_40() {
-    ins.innerText = "Now Rotate Circular Valve Clockwise to make the maximum flow rate 40%"
+    ins.innerText = "Now Rotate Circular Gauge Clockwise to make the maximum flow rate 40%"
        rotating_gauges2.addEventListener("click",  () => {
          if( f === 23){
           f = 24;
@@ -970,7 +971,7 @@ if (visibility === "visible") {
 }
 
 function pump_00() {
-    ins.innerText = "Now Rotate Circular Valve Clockwise to make the maximum flow rate 85%"
+    ins.innerText = "Now Rotate Circular Gauge Clockwise to make the maximum flow rate 85%"
        rotating_gauges2.addEventListener("click",  () => {
          if( f === 24){
           f = 25;
@@ -1142,7 +1143,7 @@ function pump_1750() {
 
                         run_button_text1.style.visibility = "hidden";
                         ins.innerText =
-                          "Click On The Circular Valve To Rotate It full Anticlockwise To Acheive Maximum Flow Rate ✅✅ At 1750 RPM";
+                          "Click On The Circular Gauge To Rotate It full Anticlockwise To Acheive Maximum Flow Rate ✅✅ At 1750 RPM";
 
                         rotating_gauges3.addEventListener("click", () => {
                           if (f === 27) {
@@ -1346,7 +1347,7 @@ function pump_1750_85() {
   observation_table_1750_text.style.opacity = "0%"
   observation_table_1750_text1.style.visibility = "visible"
   observation_table_1750_text1.style.opacity = "100%";
-  ins.innerText = "Now Rotate Circular Valve Clockwise to make the maximum flow rate 85%"
+  ins.innerText = "Now Rotate Circular Gauge Clockwise to make the maximum flow rate 85%"
   console.log("1750_85 is running")
     rotating_gauges2.style.visibility = "hidden"; 
    rotating_gauges3.addEventListener("click", () => {
@@ -1422,7 +1423,7 @@ function pump_1750_85() {
 
 // Function for 60% flow rate at 1750 RPM
 function pump_1750_60() {
-  ins.innerText = "Now Rotate Circular Valve Clockwise to make the maximum flow rate 60%"
+  ins.innerText = "Now Rotate Circular Gauge Clockwise to make the maximum flow rate 60%"
   
   rotating_gauges3.addEventListener("click", () => {
     if(f === 32){
@@ -1501,7 +1502,7 @@ function pump_1750_60() {
 
 // Function for 40% flow rate at 1750 RPM
 function pump_1750_40() {
-  ins.innerText = "Now Rotate Circular Valve Clockwise to make the maximum flow rate 40%"
+  ins.innerText = "Now Rotate Circular Gauge Clockwise to make the maximum flow rate 40%"
   
   rotating_gauges3.addEventListener("click", () => {
     if(f === 33){
@@ -1591,7 +1592,7 @@ function pump_1750_40() {
 
 // Function for 0% flow rate at 1750 RPM
 function pump_1750_00() {
-  ins.innerText = "Now Rotate Circular Valve Clockwise to make the maximum flow rate 0%"
+  ins.innerText = "Now Rotate Circular Gauge Clockwise to make the maximum flow rate 0%"
   
   rotating_gauges3.addEventListener("click", () => {
     if(f === 34){
